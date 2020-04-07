@@ -1,0 +1,74 @@
+div {
+    margin: 0 auto;
+    width: 745px;
+}
+
+button {
+    outline: none;
+}
+
+.active {
+   background: grey;
+    opacity: 0.8;
+}
+
+.width {
+    width: 40px;
+    height: 40px;
+}
+.buttons-style {
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.flex {
+    display: flex;
+}
+.text-align {
+    text-align: inherit;
+    line-height: inherit;
+}
+
+textarea{
+    width: 450px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+p{
+    margin: 0;
+}
+
+.position-p {
+    position: absolute;
+    left: 15px;
+    top: 11px;
+}
+
+section {
+    margin-bottom: 7px;
+}
+
+.tab-width {
+    width: 51px;
+}
+
+.backspace-shift-caps-width {
+    width: 103px;
+}
+
+.enter-shiftRight-width {
+    width: 88px;
+}
+
+.space-width {
+    width: 307px;
+}
+
+.ctrl-width {
+    width: 59px;
+}
+
+.slash-width {
+    width: 86px;
+}
