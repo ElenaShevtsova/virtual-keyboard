@@ -1,17 +1,16 @@
-tr,td{
-    border: 1px solid black;
+div {
+    margin: 0 auto;
+    width: 745px;
 }
 
-td {
-    width: 40px;
-    height: 40px;
-}
 button {
     outline: none;
+  
 }
 
+
 .active {
-    background: grey;
+   background: grey;
     opacity: 0.8;
 }
 
@@ -35,6 +34,7 @@ button {
 textarea{
     width: 450px;
     height: 100px;
+    margin-bottom: 15px;
 }
 
 p{

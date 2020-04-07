@@ -4,28 +4,13 @@ let body = document.getElementsByTagName('body')[0];
 body.insertBefore(div, script);
 let input = document.createElement('textarea');
 div.appendChild(input);
+let p = document.createElement('p');
 
 
-
-// let wrapper = document.createElement('section');
-// div.appendChild(wrapper);
-// wrapper.classList.add('flex');
 const sizes = {
     default: '40px'
 }
 
-// let buttons = [{ en: '`', ru: 'ё', width: sizes.default, row: 0, id: 192 }, { en: '1', ru: '', width: sizes.default, row: 0, id: 49 }, { en: '2', ru: '', width: sizes.default, row: 0, id: 50 }, { en: '3', ru: '', width: sizes.default, row: 0, id: 51 }, { en: '4', ru: '', width: sizes.default, row: 0, id: 52 }, { en: '5', ru: '', width: sizes.default, row: 0, id: 53 },
-// { en: '6', ru: '', width: sizes.default, row: 0, id: 54 }, { en: '7', ru: '', width: sizes.default, row: 0, id: 55 }, { en: '8', ru: '', width: sizes.default, row: 0, id: 56 }, { en: '9', ru: '', width: sizes.default, row: 0, id: 57 }, { en: '0', ru: '', width: sizes.default, row: 0, id: 48 }, { en: '-', ru: '', width: sizes.default, row: 0, id: 189 }, { en: '=', ru: '', width: sizes.default, row: 0, id: 187 }, { en: 'Backspace', ru: '', width: sizes.default, row: 0, id: 8 },
-// { en: 'Tab', ru: 'й', width: sizes.default, row: 1, id: 9 }, { en: 'q', ru: 'й', width: sizes.default, row: 1, id: 81 }, { en: 'w', ru: 'ц', width: sizes.default, row: 1, id: 87 }, { en: 'e', ru: 'у', width: sizes.default, row: 1, id: 69 }, { en: 'r', ru: 'к', width: sizes.default, row: 1, id: 82 },
-// { en: 't', ru: 'е', width: sizes.default, row: 1, id: 84 }, { en: 'y', ru: 'н', width: sizes.default, row: 1, id: 89 }, { en: 'u', ru: 'г', width: sizes.default, row: 1, id: 85 }, { en: 'i', ru: 'ш', width: sizes.default, row: 1, id: 73 }, { en: 'o', ru: 'щ', width: sizes.default, row: 1, id: 79 },
-// { en: 'p', ru: 'з', width: sizes.default, row: 1, id: 80 }, { en: '[', ru: 'х', width: sizes.default, row: 1, id: 219 }, { en: ']', ru: 'ъ', width: sizes.default, row: 1, id: 221 }, { en: '/**/', ru: '', width: sizes.default, row: 1, id: 220 },
-// { en: 'CapsLock', ru: '', width: sizes.default, row: 2, id: 20 }, { en: 'a', ru: 'ф', width: sizes.default, row: 2, id: 65 }, { en: 's', ru: 'ы', width: sizes.default, row: 2, id: 83 }, { en: 'd', ru: 'в', width: sizes.default, row: 2, id: 68 }, { en: 'f', ru: 'а', width: sizes.default, row: 2, id: 70 }, { en: 'g', ru: 'п', width: sizes.default, row: 2, id: 71 }, { en: 'h', ru: 'р', width: sizes.default, row: 2, id: 72 },
-// { en: 'j', ru: 'о', width: sizes.default, row: 2, id: 74 }, { en: 'k', ru: 'л', width: sizes.default, row: 2, id: 75 }, { en: 'l', ru: 'д', width: sizes.default, row: 2, id: 76 }, { en: ';', ru: 'ж', width: sizes.default, row: 2, id: 186 }, { en: '/**/', ru: 'э', width: sizes.default, row: 2, id: 222 }, { en: 'enter', ru: '', width: sizes.default, row: 2, id: 13 },
-// { en: 'Shift', ru: '', width: sizes.default, row: 3, id: 16 }, { en: 'z', ru: 'я', width: sizes.default, row: 3, id: 90 }, { en: 'x', ru: 'ч', width: sizes.default, row: 3, id: 88 }, { en: 'c', ru: 'с', width: sizes.default, row: 3, id: 67 }, { en: 'v', ru: 'м', width: sizes.default, row: 3, id: 86 }, { en: 'b', ru: 'И', width: sizes.default, row: 3, id: 66 },
-// { en: 'n', ru: 'т', width: sizes.default, row: 3, id: 78 }, { en: 'm', ru: 'ь', width: sizes.default, row: 3, id: 77 }, { en: ',', ru: 'б', width: sizes.default, row: 3, id: 188 }, { en: '.', ru: 'ю', width: sizes.default, row: 3, id: 190 }, { en: 'Slash', ru: '.', width: sizes.default, row: 3, id: 191 }, { en: 'Shift', ru: '', width: sizes.default, row: 3, id: 16 },
-// { en: 'Ctrl', ru: '', width: sizes.default, row: 4, id: 17 }, { en: 'meta', ru: '', width: sizes.default, row: 4, id: 91 }, { en: 'alt', ru: '', width: sizes.default, row: 4, id: 18 }, { en: 'space', ru: '', width: sizes.default, row: 4, id: 32 }, { en: 'Alt', ru: '', width: sizes.default, row: 4, id: 18 }, { en: 'Ctrl', ru: '', width: sizes.default, row: 4, id: 17 },
-// { en: 'ArrowLeft', ru: '', width: sizes.default, row: 4, id: 37 }, { en: 'ArrowDown', ru: '', width: sizes.default, row: 4, id: 40 }, { en: 'ArrowRight', ru: '', width: sizes.default, row: 4, id: 39 },
-// ]
 
 let firstRow = [{ en: '`', ru: 'ё', width: sizes.default, row: 0, id: 192, type: 'letter' }, { en: '1', width: sizes.default, row: 0, id: 49, type: 'letter' }, { en: '2', width: sizes.default, row: 0, id: 50, type: 'letter' }, { en: '3', width: sizes.default, row: 0, id: 51, type: 'letter' }, { en: '4', width: sizes.default, row: 0, id: 52, type: 'letter' }, { en: '5', width: sizes.default, row: 0, id: 53, type: 'letter' },
 { en: '6', width: sizes.default, row: 0, id: 54, type: 'letter' }, { en: '7', width: sizes.default, row: 0, id: 55, type: 'letter' }, { en: '8', width: sizes.default, row: 0, id: 56, type: 'letter' }, { en: '9', width: sizes.default, row: 0, id: 57, type: 'letter' }, { en: '0', width: sizes.default, row: 0, id: 48, type: 'letter' }, { en: '-', width: sizes.default, row: 0, id: 189, type: 'letter' }, { en: '=', width: sizes.default, row: 0, id: 187, type: 'letter' }, { en: 'Backspace', width: sizes.default, row: 0, id: 8, type: 'specialBtn', value: 'backspace' },
@@ -171,7 +156,7 @@ document.addEventListener('keyup', (event) => {
                     } else if (event.which.toString() === elem.id && buttons[i].classList.contains('specialBtn')) {
                         if (buttons[i].classList.contains('backspace')) {
                             input.value = input.value.slice(0, -1);
-                        }
+                        } 
                         addActiveClass(elem);
                     }
                 })
@@ -188,15 +173,30 @@ document.addEventListener('click', (event) => {
             if (item.classList.contains('letter')) {
                 item.classList.toggle('ru');
             }
-
             if (item.classList.contains('ru')) {
                 changeLanguageRu();
             } else if (item.classList.contains('letter') && !item.classList.contains('ru')) {
+                changeLanguageEn()
+            }
+        })
+    }
+})
 
+document.addEventListener('keyup',(event)=>{
+    if(event.code === 'Tab' ){
+        buttons.forEach((item) => {
+            if (item.classList.contains('letter')) {
+                item.classList.toggle('ru');
+            }
+            if (item.classList.contains('ru')) {
+                changeLanguageRu();
+            } else if (item.classList.contains('letter') && !item.classList.contains('ru')) {
                 changeLanguageEn()
             }
         })
 
-
-    }
+    } 
 })
+
+div.appendChild(p);
+p.innerText = 'Смена языка - tab'
